@@ -188,6 +188,7 @@ Aplicion de estilo sobre mi -------------------------------------------------->
 }
 
 .btn-blue {
+    background: transparent;
     /*quita subrayado y estilos del button*/
     text-decoration: none;
     /*agregan propiedades de estilo*/
@@ -275,42 +276,134 @@ Aplicacion de estilo Habilidades -------------------------------------------->
     */
 
 .works-wrapper {
+    /*definimos margenes de trabajo*/
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    /*centro texto dentro del wrapper */
     text-align: center;
 }
 
 .works-item {
+    /*agrego propiedades*/
     display: inline-block;
+    /*jusitifico al 31%+1%+1% de imagen mas margenes*/
     width: 31%;
     margin-left: 1%;
     margin-right: 1%;
     background-color: white;
     padding-bottom: 10px;
     margin-top: 10px;
-    text-align: left;
 }
 
 .works-item-img {
+    /*imagen ocupa el 100% de su 31%*/
     width: 100%;
 }
 
 .works-item-description {
+    /*margen*/
     padding: 10px;
 }
 
+/*cambiar propiedades de un boton 
+.works-item-description .btn-blue{
+    display: block;
+}
+*/
+
 .work-item-title {
+    /*estilo del title*/
     font-size: 18px;
     text-transform: uppercase;
     color: rgb(70, 203, 253);
 }
-.work-item-client{
+
+.work-item-client {
+    /*estilo repository*/
     font-size: 18px;
 }
 
-.work-item-client a{
+.work-item-client a {
+    /*estilo del link del item-client*/
     text-decoration: none;
     font-weight: 700;
     color: #765bf6;
+}
+
+/*Aplicacion de estilo formulario --------------------------------------------------------->*/
+
+.contact-form{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-row{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    overflow: hidden; 
+    }
+
+.contact-column{
+    width: 45%;
+    display: inline-block;
+}
+.contact-column.legth{
+    float: left;
+}
+.contact-column.rigth{
+    float: right;
+}
+.contact-column label{
+    color: #606060;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 0px 5px;
+}
+.contact-column .contact-input-text{
+    background: white;
+    border: 0px;
+    border-bottom: 3px solid rgb(70, 203, 253);
+    height: 40px;
+    width: 100%;
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact-column.--width100{
+    width: 100%;
+}
+.contact-column textarea{
+    background: white;
+    border: 0px;
+    border-bottom: 3px solid rgb(70, 203, 253);
+    height: 200px;
+    width: 100%
+}
+
+.footer{
+    background: #d1d1d1;
+    margin-top: 10px;
+}
+
+.footer-wrapper{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer-text{
+    font-size: 18px;
+}
+
+.footer-text a{
+    color: #765bf6;
+    text-decoration: none;
+    font-weight: 700;
 }
