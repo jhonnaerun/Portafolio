@@ -1,0 +1,54 @@
+/* selector universal */
+*{
+    border: 1px solid blue;
+    margin: 5px;
+}
+
+/* selector de etiquetas */
+
+header{
+    background-color: rgb(43, 7, 110);
+    color: white;
+}
+
+article{
+    background-color: coral;
+    font-size: 18px;
+    color: aqua;
+}
+
+/*selectores descendentes*/ 
+
+article header{
+    background-color: blueviolet;
+    color: orangered;
+}
+
+article a{
+    color: red;
+    font-size: 20px;
+}
+
+/* selectores de clase*/
+
+.header{
+    background-color: chartreuse;
+    color: darkorange;
+}
+
+.skills-wrapper{
+    background-color: chartreuse;
+    color: darkorange;
+}
+
+.title-underline{
+    background-color: darkgreen;
+    color:lightseagreen;
+}
+
+/*selector de ID */
+
+#aboutme{
+    font-size: 25px;
+    color: gray;
+}

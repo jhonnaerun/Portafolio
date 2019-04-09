@@ -1,0 +1,275 @@
+/*
+  Aplicacion de estilos selectores universales Css3
+  
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333333;
+    background-color: #eeeeee;
+}
+
+/* 
+aplicacion de estilo al header y menu -------------------------------------------->
+*/
+
+.header {
+    background-color: royalblue;
+}
+
+.header-wrapper {
+    /*establece tamaño para trabajar*/
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    /*margen externa arriba*/
+    padding-top: 5px;
+    /*margen externa abajo*/
+    padding-bottom: 5px;
+    /*contiene todos los elementos tipo float*/
+    overflow: hidden;
+}
+
+.header-logo {
+    /*se alinea a la izquierda de tipo float*/
+    float: left;
+    height: 60px;
+}
+
+.header-menu {
+    float: right;
+}
+
+.header-menu-wrapper {
+    /*se eliminan margenes de estilo del menu*/
+    margin: 0;
+    padding: 0;
+    /*se eliminanan los estilos de las listas no ordenadas viñetas*/
+    list-style: none;
+    font-size: 0;
+}
+
+.header-menu-item {
+    /*muestra los items del menu en linea*/
+    display: inline-block;
+    /*tamaño de letra*/
+    font-size: 18px;
+}
+
+.header-menu-link {
+    height: 50px;
+    display: inline-block;
+    /*margen esterna derecha e iquierda de 10px*/
+    padding-left: 10px;
+    padding-right: 10px;
+    /*transforma la letra en mayuscula*/
+    text-transform: uppercase;
+    /*se alinea con el logo*/
+    line-height: 60px;
+    /*elimina el subrayado*/
+    text-decoration: none;
+    /*se da peso a la lista*/
+    font-weight: 500;
+    color: white;
+}
+
+/*clase que me resalta un enlace al apuntarlo con el mouse*/
+
+.header-menu-link:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* 
+Aplicacion de estilo portada ------------------------------------------->
+*/
+
+.cover {
+    /*carga imagen como fondo*/
+    background-image: url('../img/portada.png');
+    /*centra el fondo*/
+    background-position: center;
+    /*ajusta imagen a section y ventana*/
+    background-size: cover;
+}
+
+.cover-wrapper {
+    /*margen de trabajo*/
+    max-width: 1200px;
+    /*se centra */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    /*alineado de elementos*/
+    text-align: center;
+}
+
+.cover-photo-container {
+    /*margen de la imagen de portada*/
+    margin: 30px;
+}
+
+.cover-photo {
+    /*radio de la imagen */
+    border-radius: 50%;
+}
+
+.cover-text {
+    /*define un color para resaltar el texto de la portada*/
+    background-color: rgba(70, 203, 253, 0.5);
+    /*ajusta el resaltado lineal*/
+    display: inline-block;
+    /*establece margenes*/
+    padding: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: white;
+}
+
+.cover-title {
+    font-size: 30px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.cover-subtitle {
+    font-size: 18px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+
+/* 
+Aplicion de estilo sobre mi -------------------------------------------------->
+*/
+
+.title-underline {
+    /*estilo de los titulos*/
+    text-align: center;
+    font-size: 30px;
+    color: #606060;
+    text-transform: uppercase;
+    /*agrega subrayado*/
+    text-decoration: underline;
+}
+
+/*aplicac estilo al span dentro del title underline*/
+
+.title-underline span {
+    display: inline-block;
+    /*agrega y aplica estilo al subrayado*/
+    border-bottom: 4px solid rgb(70, 203, 253);
+    /*agrega tamaño al subrayado*/
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cover-description {
+    /*aplica estilo a la description*/
+    background-color: white;
+    font-size: 18px;
+    padding: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cover-description span {
+    /*colorea y da peso a palabras dentro del texto*/
+    color: rgb(70, 203, 253);
+    font-weight: 600;
+}
+
+.text-center {
+    /*centra botones*/
+    text-align: center;
+}
+
+.btn-blue {
+    /*quita subrayado y estilos del button*/
+    text-decoration: none;
+    /*agregan propiedades de estilo*/
+    display: inline-block;
+    /*define letras mayusculas*/
+    text-transform: uppercase;
+    font-weight: 500;
+    /*agrega color a letra del button*/
+    color: rgb(70, 203, 253);
+    /*agrega borde al button*/
+    border: 3px solid rgb(70, 203, 253);
+    /*define margenes laterales del button*/
+    padding: 10px 15px;
+    /*suaviza el tiempo de cambio de color entre la transicion del hover*/
+    transition: background-color 0.4s, color 0.4s;
+}
+
+/*cambios al apuntar al button*/
+
+.btn-blue:hover {
+    /*cambia de color el button*/
+    background-color: rgb(70, 203, 253);
+    color: white;
+}
+
+/*
+Aplicacion de estilo Habilidades -------------------------------------------->
+*/
+
+.skills-wrapper {
+    /*define area de trabajo*/
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    /*quita estilo de viñetas*/
+    list-style: none;
+    /*definen bordes*/
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+.skills-text {
+    /*convierte texto a mayusculas*/
+    text-transform: uppercase;
+    color: #606060;
+    font-weight: 700;
+    /*se definen margenes*/
+    margin: 10px 0px;
+    padding: 10px 0px;
+    /*no permite que los atributos float queden fuera del box*/
+    overflow: hidden;
+}
+
+/*atributo nombre alienado a la izquierda*/
+
+.skills-name {
+    float: left;
+}
+
+/*atributo score alineado a la derecha*/
+
+.skills-score {
+    float: right;
+}
+
+.skills-bar {
+    /*define una barra y su color*/
+    width: 100%;
+    height: 30px;
+    background-color: #606060
+}
+
+/*cada una de las barras width es definido en la clase "skills-bar-fulling" del codigo html*/
+
+.skills-bar-fulling {
+    /*define la barrra de llenado*/
+    background-color: #765bf6;
+    height: 30px;
+    display: inline-block;
+}
+
+/*
+     Aplicacion estilo portafolio ------------------------------------------------------>
+    */
